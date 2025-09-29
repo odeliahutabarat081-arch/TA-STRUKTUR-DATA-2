@@ -7,7 +7,7 @@ struct Siswa {
     int nilai;
 };
 
-void tukar(siswa*x, siswa*y) {
+void tukar(siswa *x, siswa *y) {
     siswa temp = *x;
     *x = *y;
     *y = temp;
@@ -29,11 +29,11 @@ int main() {
         cin.ignore();
     }
 
-    // Selection Sort Descending
+
     for (int i = 0; i < n - 1; i++) {
         int pos = i;
         for (int j = i + 1; j < n; j++) {
-            if (arr[j].nilai > arr[pos].nilai) { // ubah jadi ">" untuk descending
+            if (arr[j].nilai > arr[pos].nilai) { 
                 pos = j;
             }
         }
@@ -49,4 +49,5 @@ int main() {
 
     return 0;
 }
+
 
