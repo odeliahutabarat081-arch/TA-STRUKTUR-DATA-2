@@ -7,8 +7,8 @@ struct Siswa {
     int nilai;
 };
 
-void tukar(*x, *y) {
-     temp = *x;
+void tukar(siswa*x, siswa*y) {
+    siswa temp = *x;
     *x = *y;
     *y = temp;
 }
@@ -49,3 +49,4 @@ int main() {
 
     return 0;
 }
+
